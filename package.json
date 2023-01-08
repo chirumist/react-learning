@@ -18,8 +18,11 @@
   "bugs": {
     "url": "https://github.com/chirumist/react-learning/issues"
   },
-  "homepage": "https://github.com/chirumist/react-learning#readme",
+  "homepage": "https://github.com/chirumist/react-learning",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
