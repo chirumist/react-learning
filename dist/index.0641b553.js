@@ -2966,14 +2966,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
             lineNumber: 24,
             columnNumber: 14
         }, undefined)
+    },
+    {
+        path: "/about",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPageDefault.default), {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 28,
+            columnNumber: 14
+        }, undefined)
     }
 ]);
 const root = (0, _clientDefault.default).createRoot(document.querySelector("#app"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
-    routes: appRouter
+    router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 30,
+    lineNumber: 34,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -32891,6 +32899,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 const AboutPage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "text-4xl",
             children: "About Page"
         }, void 0, false, {
             fileName: "src/pages/AboutPage.js",
