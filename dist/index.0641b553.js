@@ -2943,7 +2943,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/MainComponent":"hAeZt","./components/partials/HeaderComponent":"lH4Fy","./components/partials/FooterComponent":"gik08"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/partials/HeaderComponent":"lH4Fy","./components/partials/FooterComponent":"gik08","./components/MainComponent":"hAeZt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("4e2c8a3b230180be");
 
@@ -27128,7 +27128,112 @@ module.exports = require("604a893e0bea2469");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"lH4Fy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$05c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$05c0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HeaderComponent", ()=>HeaderComponent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _logoComponent = require("./LogoComponent");
+var _navbarComponent = require("./NavbarComponent");
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-between items-center px-6 py-4 border border-bottom",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoComponent.LogoComponent), {}, void 0, false, {
+                fileName: "src/components/partials/HeaderComponent.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarComponent.NavbarComponent), {}, void 0, false, {
+                fileName: "src/components/partials/HeaderComponent.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/partials/HeaderComponent.jsx",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HeaderComponent;
+var _c;
+$RefreshReg$(_c, "HeaderComponent");
+
+  $parcel$ReactRefreshHelpers$05c0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./LogoComponent":"6zjBG","./NavbarComponent":"hdEh0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6zjBG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ebac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ebac.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LogoComponent", ()=>LogoComponent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const LogoComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-green-700 flex items-center gap-3",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                id: "logo-85",
+                width: "40",
+                height: "40",
+                viewBox: "0 0 40 40",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    className: "ccustom",
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M10 0C15.5228 0 20 4.47715 20 10V0H30C35.5228 0 40 4.47715 40 10C40 15.5228 35.5228 20 30 20C35.5228 20 40 24.4772 40 30C40 32.7423 38.8961 35.2268 37.1085 37.0334L37.0711 37.0711L37.0379 37.1041C35.2309 38.8943 32.7446 40 30 40C27.2741 40 24.8029 38.9093 22.999 37.1405C22.9756 37.1175 22.9522 37.0943 22.9289 37.0711C22.907 37.0492 22.8852 37.0272 22.8635 37.0051C21.0924 35.2009 20 32.728 20 30C20 35.5228 15.5228 40 10 40C4.47715 40 0 35.5228 0 30V20H10C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM18 10C18 14.4183 14.4183 18 10 18V2C14.4183 2 18 5.58172 18 10ZM38 30C38 25.5817 34.4183 22 30 22C25.5817 22 22 25.5817 22 30H38ZM2 22V30C2 34.4183 5.58172 38 10 38C14.4183 38 18 34.4183 18 30V22H2ZM22 18V2L30 2C34.4183 2 38 5.58172 38 10C38 14.4183 34.4183 18 30 18H22Z",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "src/components/partials/LogoComponent.jsx",
+                    lineNumber: 4,
+                    columnNumber: 121
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/partials/LogoComponent.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "text-2xl font-bold",
+                children: "Tummy Filler Villa"
+            }, void 0, false, {
+                fileName: "src/components/partials/LogoComponent.jsx",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/partials/LogoComponent.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = LogoComponent;
+var _c;
+$RefreshReg$(_c, "LogoComponent");
+
+  $parcel$ReactRefreshHelpers$ebac.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27292,7 +27397,186 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"4b4814e73dc6a434":"786KC"}],"hAeZt":[function(require,module,exports) {
+},{"4b4814e73dc6a434":"786KC"}],"hdEh0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e576 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e576.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NavbarComponent", ()=>NavbarComponent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const NavbarComponent = ()=>{
+    _s();
+    const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-rows gap-4 items-center",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                className: "text-green-500 hover:text-green-800",
+                children: "Home"
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                className: "text-green-500 hover:text-green-800",
+                children: "Resturents"
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                className: "text-green-500 hover:text-green-800",
+                children: "Dishes"
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                className: "text-green-500 hover:text-green-800",
+                children: "FAQ"
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                className: "text-green-500 hover:text-green-800",
+                children: "Hep"
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            !isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "button",
+                        onClick: ()=>setIsLoggedIn(true),
+                        className: "px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded transition-all duration-300 ease-in-out shadow hover:shadow-lg focus:shadow-none",
+                        children: "Login"
+                    }, void 0, false, {
+                        fileName: "src/components/partials/NavbarComponent.jsx",
+                        lineNumber: 13,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "button",
+                        onClick: ()=>setIsLoggedIn(true),
+                        className: "px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded transition-all duration-300 ease-in-out shadow hover:shadow-lg focus:shadow-none",
+                        children: "Register"
+                    }, void 0, false, {
+                        fileName: "src/components/partials/NavbarComponent.jsx",
+                        lineNumber: 14,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#",
+                onClick: ()=>setIsLoggedIn(false),
+                className: "text-green-700 hover:bg-green-700 hover:text-white rounded-full",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    strokeWidth: "1.5",
+                    stroke: "currentColor",
+                    className: "w-6 h-6",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        d: "M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    }, void 0, false, {
+                        fileName: "src/components/partials/NavbarComponent.jsx",
+                        lineNumber: 19,
+                        columnNumber: 25
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/partials/NavbarComponent.jsx",
+                    lineNumber: 18,
+                    columnNumber: 21
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/partials/NavbarComponent.jsx",
+                lineNumber: 17,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/partials/NavbarComponent.jsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_s(NavbarComponent, "g0MSgNVZk+vKiEFnDJ9VPEfswFA=");
+_c = NavbarComponent;
+var _c;
+$RefreshReg$(_c, "NavbarComponent");
+
+  $parcel$ReactRefreshHelpers$e576.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"gik08":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$017f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$017f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FooterComponent", ()=>FooterComponent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const FooterComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "fixed bottom-0 px-4 py-2 flex justify-between w-full bg-white",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Loved By Chirag Mistry"
+            }, void 0, false, {
+                fileName: "src/components/partials/FooterComponent.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Copyright @2022"
+            }, void 0, false, {
+                fileName: "src/components/partials/FooterComponent.jsx",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/partials/FooterComponent.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = FooterComponent;
+var _c;
+$RefreshReg$(_c, "FooterComponent");
+
+  $parcel$ReactRefreshHelpers$017f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hAeZt":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$693c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27305,6 +27589,7 @@ parcelHelpers.export(exports, "MainComponent", ()=>MainComponent);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _resturentCard = require("./cards/ResturentCard");
+var _shimmerCard = require("./cards/ShimmerCard");
 var _constant = require("../constant");
 var _s = $RefreshSig$();
 const filterData = ({ searchText , searchKey  }, ArrayList)=>{
@@ -27313,13 +27598,25 @@ const filterData = ({ searchText , searchKey  }, ArrayList)=>{
 const MainComponent = ()=>{
     _s();
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const [resturentList, setResturentList] = (0, _react.useState)((0, _constant.RESTURENTS_LIST));
+    const [allResturentList, setAllResturentList] = (0, _react.useState)([]);
+    const [filteredResturentList, setFilteredResturentList] = (0, _react.useState)((0, _constant.RESTURENTS_LIST));
     const performSearch = (e)=>{
-        setResturentList(filterData({
+        setFilteredResturentList(filterData({
             searchText,
             searchKey: "name"
-        }, (0, _constant.RESTURENTS_LIST)));
+        }, allResturentList));
     };
+    const getResturents = async ()=>{
+        const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.241949&lng=72.86806&page_type=DESKTOP_WEB_LISTING");
+        const json = await res.json();
+        const resturents = json?.data?.cards?.find((item)=>item.cardType == "seeAllRestaurants")?.data?.data?.cards;
+        setAllResturentList(resturents);
+        setFilteredResturentList(resturents);
+        return json;
+    };
+    (0, _react.useEffect)(()=>{
+        getResturents();
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container mx-auto pb-8",
         children: [
@@ -27333,7 +27630,7 @@ const MainComponent = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/MainComponent.jsx",
-                        lineNumber: 22,
+                        lineNumber: 37,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27342,38 +27639,42 @@ const MainComponent = ()=>{
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "src/components/MainComponent.jsx",
-                        lineNumber: 23,
+                        lineNumber: 38,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/MainComponent.jsx",
-                lineNumber: 21,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "main-wrapper grid grid-cols-4 gap-4 py-4",
-                children: resturentList.map((resturent, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentCard.ResturentCard), {
+                children: filteredResturentList.map((resturent, index)=>allResturentList.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentCard.ResturentCard), {
                         ...resturent.data,
                         type: resturent.cardType
                     }, index, false, {
                         fileName: "src/components/MainComponent.jsx",
-                        lineNumber: 28,
+                        lineNumber: 44,
+                        columnNumber: 25
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerCard.ShimmerCard), {}, index, false, {
+                        fileName: "src/components/MainComponent.jsx",
+                        lineNumber: 46,
                         columnNumber: 25
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/MainComponent.jsx",
-                lineNumber: 25,
+                lineNumber: 40,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/MainComponent.jsx",
-        lineNumber: 20,
+        lineNumber: 35,
         columnNumber: 9
     }, undefined);
 };
-_s(MainComponent, "rsXwRrdpsCrXPUga462RnM/Y3h8=");
+_s(MainComponent, "wHhYUvEeyrZKmpp5Xv+aryI8yqI=");
 _c = MainComponent;
 var _c;
 $RefreshReg$(_c, "MainComponent");
@@ -27383,7 +27684,7 @@ $RefreshReg$(_c, "MainComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./cards/ResturentCard":"jEQwf","../constant":"jVIFP","react":"21dqq"}],"jEQwf":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./cards/ResturentCard":"jEQwf","../constant":"jVIFP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./cards/ShimmerCard":"lKkSt"}],"jEQwf":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4408 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27475,1010 +27776,107 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "RESTURENTS_LIST", ()=>RESTURENTS_LIST);
 const RESTURENTS_LIST = [
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "73011",
-            name: "KFC",
-            uuid: "27ff4155-fe46-418e-9862-ab98953bf953",
-            city: "22",
-            area: "Anand Vihar Colony",
-            totalRatingsString: "5000+ ratings",
-            cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
-            cuisines: [
-                "American",
-                "Snacks",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 31,
-            maxDeliveryTime: 31,
-            slaString: "31 MINS",
-            lastMileTravel: 6.199999809265137,
-            slugs: {
-                restaurant: "kfc-chukkuwala-chukkuwala",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "KFC Restaurant, Khasra No 1281/1291, Opp Dr Manish Jain hospital, Chakrata road, Dehradun-248001",
-            locality: "Clock Tower",
-            parentId: 547,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "50% off",
-                shortDescriptionList: [
-                    {
-                        meta: "50% off | Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "50% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=5698075~p=1~eid=00000185-8b09-7c92-0e51-a04b00dc0124",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "73011",
-                deliveryTime: 31,
-                minDeliveryTime: 31,
-                maxDeliveryTime: 31,
-                lastMileTravel: 6.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.0",
-            totalRatings: 5000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "542132",
-            name: "Domnik Pizza",
-            uuid: "f2ee37f5-9ab0-4903-9420-6cae020b0a38",
-            city: "22",
-            area: "Majra    Bansal Home",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "sboh9oor0cvp6ztsyhvj",
-            cuisines: [
-                "Pizzas",
-                "Italian",
-                "Fast Food",
-                "Snacks",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 33,
-            minDeliveryTime: 33,
-            maxDeliveryTime: 33,
-            slaString: "33 MINS",
-            lastMileTravel: 0.6000000238418579,
-            slugs: {
-                restaurant: "domnik-pizza-patel-nagar-patel-nagar-2",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "28/3 Sewala Chandravani Road, Arcedia Grant, Dehradun Rural, Dehradun, Uttarakhand",
-            locality: "Patel Nagar",
-            parentId: 22321,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "50% off",
-                shortDescriptionList: [
-                    {
-                        meta: "50% off | Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "50% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.6 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "542132",
-                deliveryTime: 33,
-                minDeliveryTime: 33,
-                maxDeliveryTime: 33,
-                lastMileTravel: 0.6000000238418579,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.8",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "321517",
-            name: "FOOD PLANET RESTAURANT",
-            uuid: "899d5dd4-200a-48b2-a321-391bb9486ec2",
-            city: "22",
-            area: "Majra",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "ykboewqeoxnne8fgrnui",
-            cuisines: [
-                "Indian",
-                "Chinese",
-                "Tandoor",
-                "Thalis",
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 25,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 25,
-            slaString: "25 MINS",
-            lastMileTravel: 0.699999988079071,
-            slugs: {
-                restaurant: "food-planet-restaurant-patel-nagar-patel-nagar",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "157/11, Chandra Parisar Chandra Bani Rd, Ekta Enclave, Doon Enclave, Majra, Dehradun, Uttarakhand 248171",
-            locality: "Patel Nagar",
-            parentId: 81850,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "50% off",
-                shortDescriptionList: [
-                    {
-                        meta: "50% off | Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "50% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.6 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "321517",
-                deliveryTime: 25,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 25,
-                lastMileTravel: 0.699999988079071,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "2.8",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "311806",
-            name: "Burger King",
-            uuid: "162a4dc4-50de-452a-82cf-751e18ac9952",
-            city: "22",
-            area: "Anand Vihar Colony",
-            totalRatingsString: "5000+ ratings",
-            cloudinaryImageId: "iqh7ew5ldfgvpd5dpz60",
-            cuisines: [
-                "Burgers",
-                "American"
-            ],
-            tags: [],
-            costForTwo: 35000,
-            costForTwoString: "₹350 FOR TWO",
-            deliveryTime: 39,
-            minDeliveryTime: 39,
-            maxDeliveryTime: 39,
-            slaString: "39 MINS",
-            lastMileTravel: 6.300000190734863,
-            slugs: {
-                restaurant: "burger-king-chakrata-road-ballupur",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "5/5,4/4 & 3/3, GROUND FLOOR, CHAKRATA ROAD, DEHRADUN, UTTRAKHAND",
-            locality: "CHAKRATA ROAD",
-            parentId: 166,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "60% off",
-                shortDescriptionList: [
-                    {
-                        meta: "60% off | Use STEALDEAL",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "60% off up to ₹120 | Use code STEALDEAL",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "60% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use STEALDEAL",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "60% off up to ₹120 | Use code STEALDEAL",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=5700193~p=4~eid=00000185-8b09-7c92-0e51-a04c00dc0405",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "311806",
-                deliveryTime: 39,
-                minDeliveryTime: 39,
-                maxDeliveryTime: 39,
-                lastMileTravel: 6.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.2",
-            totalRatings: 5000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "132460",
-            name: "Annapurna Andhra Mess",
-            uuid: "c6460418-904b-4371-9e04-0ce8b1b46cae",
-            city: "22",
-            area: "Dehradun",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "zw4qx2szsy9kbszk9n3d",
-            cuisines: [
-                "South Indian",
-                "Biryani",
-                "North Indian"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 25,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 25,
-            slaString: "25 MINS",
-            lastMileTravel: 1.399999976158142,
-            slugs: {
-                restaurant: "annapurna-andhra-mess-subhash-nagar-subhash-nagar",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "keshav enclave sewla khurd chandrabani road behind uttranchal PG college",
-            locality: "Patel Nagar",
-            parentId: 33997,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "50% off",
-                shortDescriptionList: [
-                    {
-                        meta: "50% off | Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "50% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "1.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "132460",
-                deliveryTime: 25,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 25,
-                lastMileTravel: 1.399999976158142,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "496677",
-            name: "Uncle Ji Restaurant",
-            uuid: "e652ab57-22c2-4226-b5ea-a5caa26ee0f8",
-            city: "22",
-            area: "Patel Nagar",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "kx2ghnwagcnqjtmd5jbc",
-            cuisines: [
-                "North Indian",
-                "Snacks",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 31,
-            maxDeliveryTime: 31,
-            slaString: "31 MINS",
-            lastMileTravel: 0.800000011920929,
-            slugs: {
-                restaurant: "uncle-ji-restaurant-patel-nagar-patel-nagar",
-                city: "dehradun"
-            },
-            cityState: "22",
-            address: "348 santosh tower, majra road gram majra dehradun 248001",
-            locality: "Patel Nagar",
-            parentId: 298209,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "50% off",
-                shortDescriptionList: [
-                    {
-                        meta: "50% off | Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "50% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "50% off up to ₹100 | Use code WELCOME50",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.8 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "496677",
-                deliveryTime: 31,
-                minDeliveryTime: 31,
-                maxDeliveryTime: 31,
-                lastMileTravel: 0.800000011920929,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "--",
-            totalRatings: 0,
-            new: false
-        },
-        subtype: "basic"
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lH4Fy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$05c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lKkSt":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$030f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$05c0.prelude(module);
+$parcel$ReactRefreshHelpers$030f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "HeaderComponent", ()=>HeaderComponent);
+parcelHelpers.export(exports, "ShimmerCard", ()=>ShimmerCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _logoComponent = require("./LogoComponent");
-var _navbarComponent = require("./NavbarComponent");
-const HeaderComponent = ()=>{
+const ShimmerCard = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex justify-between items-center px-6 py-4 border border-bottom",
+        className: "h-full border-2 border-gray-100 rounded-lg overflow-hidden",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoComponent.LogoComponent), {}, void 0, false, {
-                fileName: "src/components/partials/HeaderComponent.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarComponent.NavbarComponent), {}, void 0, false, {
-                fileName: "src/components/partials/HeaderComponent.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/partials/HeaderComponent.jsx",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = HeaderComponent;
-var _c;
-$RefreshReg$(_c, "HeaderComponent");
-
-  $parcel$ReactRefreshHelpers$05c0.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./LogoComponent":"6zjBG","./NavbarComponent":"hdEh0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6zjBG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ebac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ebac.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "LogoComponent", ()=>LogoComponent);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const LogoComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "text-green-700 flex items-center gap-3",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                id: "logo-85",
-                width: "40",
-                height: "40",
-                viewBox: "0 0 40 40",
-                fill: "none",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                    className: "ccustom",
-                    fillRule: "evenodd",
-                    clipRule: "evenodd",
-                    d: "M10 0C15.5228 0 20 4.47715 20 10V0H30C35.5228 0 40 4.47715 40 10C40 15.5228 35.5228 20 30 20C35.5228 20 40 24.4772 40 30C40 32.7423 38.8961 35.2268 37.1085 37.0334L37.0711 37.0711L37.0379 37.1041C35.2309 38.8943 32.7446 40 30 40C27.2741 40 24.8029 38.9093 22.999 37.1405C22.9756 37.1175 22.9522 37.0943 22.9289 37.0711C22.907 37.0492 22.8852 37.0272 22.8635 37.0051C21.0924 35.2009 20 32.728 20 30C20 35.5228 15.5228 40 10 40C4.47715 40 0 35.5228 0 30V20H10C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM18 10C18 14.4183 14.4183 18 10 18V2C14.4183 2 18 5.58172 18 10ZM38 30C38 25.5817 34.4183 22 30 22C25.5817 22 22 25.5817 22 30H38ZM2 22V30C2 34.4183 5.58172 38 10 38C14.4183 38 18 34.4183 18 30V22H2ZM22 18V2L30 2C34.4183 2 38 5.58172 38 10C38 14.4183 34.4183 18 30 18H22Z",
-                    fill: "currentColor"
-                }, void 0, false, {
-                    fileName: "src/components/partials/LogoComponent.jsx",
-                    lineNumber: 4,
-                    columnNumber: 121
-                }, undefined)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "lg:h-40 bg-gray-300 md:h-36 w-full object-cover object-center"
             }, void 0, false, {
-                fileName: "src/components/partials/LogoComponent.jsx",
+                fileName: "src/components/cards/ShimmerCard.jsx",
                 lineNumber: 4,
-                columnNumber: 13
+                columnNumber: 11
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "text-2xl font-bold",
-                children: "Tummy Filler Villa"
-            }, void 0, false, {
-                fileName: "src/components/partials/LogoComponent.jsx",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/partials/LogoComponent.jsx",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = LogoComponent;
-var _c;
-$RefreshReg$(_c, "LogoComponent");
-
-  $parcel$ReactRefreshHelpers$ebac.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hdEh0":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e576 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e576.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NavbarComponent", ()=>NavbarComponent);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const NavbarComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-rows gap-4",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "Home"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "Resturents"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "Dishes"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "FAQ"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "Hep"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-700 hover:bg-green-700 hover:text-white rounded-full",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    strokeWidth: "1.5",
-                    stroke: "currentColor",
-                    className: "w-6 h-6",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        d: "M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-6",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "w-1/2 mb-4 h-6 animate-pulse bg-gray-400"
                     }, void 0, false, {
-                        fileName: "src/components/partials/NavbarComponent.jsx",
-                        lineNumber: 11,
-                        columnNumber: 21
+                        fileName: "src/components/cards/ShimmerCard.jsx",
+                        lineNumber: 6,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "leading-relaxed mb-3 w-full h-3 animate-pulse bg-gray-300"
+                    }, void 0, false, {
+                        fileName: "src/components/cards/ShimmerCard.jsx",
+                        lineNumber: 7,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "leading-relaxed mb-3 w-2/3 h-3 animate-pulse bg-gray-300"
+                    }, void 0, false, {
+                        fileName: "src/components/cards/ShimmerCard.jsx",
+                        lineNumber: 8,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "leading-relaxed mb-3 w-1/2 h-3 animate-pulse bg-gray-300"
+                    }, void 0, false, {
+                        fileName: "src/components/cards/ShimmerCard.jsx",
+                        lineNumber: 9,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex items-center flex-wrap ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "bg-orange-300 h-4 animate-pulse mt-2 w-32 inline-flex items-center md:mb-2 lg:mb-0"
+                        }, void 0, false, {
+                            fileName: "src/components/cards/ShimmerCard.jsx",
+                            lineNumber: 11,
+                            columnNumber: 15
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/cards/ShimmerCard.jsx",
+                        lineNumber: 10,
+                        columnNumber: 13
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/partials/NavbarComponent.jsx",
-                    lineNumber: 10,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/partials/NavbarComponent.jsx",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = NavbarComponent;
-var _c;
-$RefreshReg$(_c, "NavbarComponent");
-
-  $parcel$ReactRefreshHelpers$e576.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gik08":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$017f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$017f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "FooterComponent", ()=>FooterComponent);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const FooterComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "fixed bottom-0 px-4 py-2 flex justify-between w-full bg-white",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Loved By Chirag Mistry"
-            }, void 0, false, {
-                fileName: "src/components/partials/FooterComponent.jsx",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Copyright @2022"
-            }, void 0, false, {
-                fileName: "src/components/partials/FooterComponent.jsx",
+                ]
+            }, void 0, true, {
+                fileName: "src/components/cards/ShimmerCard.jsx",
                 lineNumber: 5,
-                columnNumber: 13
+                columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/partials/FooterComponent.jsx",
+        fileName: "src/components/cards/ShimmerCard.jsx",
         lineNumber: 3,
         columnNumber: 9
     }, undefined);
 };
-_c = FooterComponent;
+_c = ShimmerCard;
+exports.default = ShimmerCard;
 var _c;
-$RefreshReg$(_c, "FooterComponent");
+$RefreshReg$(_c, "ShimmerCard");
 
-  $parcel$ReactRefreshHelpers$017f.postlude(module);
+  $parcel$ReactRefreshHelpers$030f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

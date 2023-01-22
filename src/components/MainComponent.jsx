@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ResturentCard } from './cards/ResturentCard'
+import { ShimmerCard } from './cards/ShimmerCard'
 import { RESTURENTS_LIST } from '../constant'
 
 const filterData = ({searchText, searchKey}, ArrayList) => {
@@ -10,11 +11,25 @@ export const MainComponent = () => {
 
     const [searchText, setSearchText] = useState("")
 
-    const [resturentList, setResturentList] = useState(RESTURENTS_LIST)
+    const [allResturentList, setAllResturentList] = useState([])
+    const [filteredResturentList, setFilteredResturentList] = useState(RESTURENTS_LIST)
 
     const performSearch = (e) => {
-        setResturentList(filterData({ searchText, searchKey: 'name' }, RESTURENTS_LIST))
+        setFilteredResturentList(filterData({ searchText, searchKey: 'name' }, allResturentList))
     }
+
+    const getResturents = async () => {
+        const res = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.241949&lng=72.86806&page_type=DESKTOP_WEB_LISTING')
+        const json = await res.json()
+        const resturents = json?.data?.cards?.find((item) => item.cardType == "seeAllRestaurants")?.data?.data?.cards
+        setAllResturentList(resturents)
+        setFilteredResturentList(resturents)
+        return json
+    }
+
+    useEffect(() => {
+        getResturents()
+    }, [])
 
     return (
         <div className="container mx-auto pb-8">
@@ -24,8 +39,12 @@ export const MainComponent = () => {
             </div>
             <div className="main-wrapper grid grid-cols-4 gap-4 py-4">
                 {
-                    resturentList.map((resturent, index) => (
+                    filteredResturentList.map((resturent, index) => (
+                        allResturentList.length > 0 ? (
                         <ResturentCard key={index} {...resturent.data} type={resturent.cardType}></ResturentCard>
+                        ) : (
+                        <ShimmerCard key={index}></ShimmerCard>
+                        )
                     ))
                 }
             </div>
