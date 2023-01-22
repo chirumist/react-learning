@@ -1,18 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { HeaderComponent } from './components/partials/HeaderComponent'
-import { FooterComponent } from './components/partials/FooterComponent'
-import { MainComponent } from './components/MainComponent'
+import { HeaderComponent } from "./components/partials/HeaderComponent";
+import { FooterComponent } from "./components/partials/FooterComponent";
+import { MainComponent } from "./components/MainComponent";
 
-const App = () => {
-    return (
-        <>
-            <HeaderComponent></HeaderComponent>
-            <MainComponent></MainComponent>
-            <FooterComponent></FooterComponent>
-        </>
-    )
-}
+import AboutPage from "./pages/AboutPage";
 
-ReactDOM.createRoot(document.querySelector('#app')).render(<App />)
+const AppLayout = () => {
+  return (
+    <>
+      <HeaderComponent></HeaderComponent>
+      <MainComponent></MainComponent>
+      <FooterComponent></FooterComponent>
+    </>
+  );
+};
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.querySelector("#app"));
+
+root.render(<RouterProvider routes={appRouter} />);

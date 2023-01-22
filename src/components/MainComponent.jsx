@@ -12,7 +12,7 @@ export const MainComponent = () => {
     const [searchText, setSearchText] = useState("")
 
     const [allResturentList, setAllResturentList] = useState([])
-    const [filteredResturentList, setFilteredResturentList] = useState(RESTURENTS_LIST)
+    const [filteredResturentList, setFilteredResturentList] = useState([])
 
     const performSearch = (e) => {
         setFilteredResturentList(filterData({ searchText, searchKey: 'name' }, allResturentList))
@@ -39,13 +39,13 @@ export const MainComponent = () => {
             </div>
             <div className="main-wrapper grid grid-cols-4 gap-4 py-4">
                 {
-                    filteredResturentList.map((resturent, index) => (
-                        allResturentList.length > 0 ? (
-                        <ResturentCard key={index} {...resturent.data} type={resturent.cardType}></ResturentCard>
-                        ) : (
-                        <ShimmerCard key={index}></ShimmerCard>
-                        )
-                    ))
+                    allResturentList.length == 0 ? (
+                        Array(RESTURENTS_LIST).fill("").map((e, index) => <ShimmerCard key={index}></ShimmerCard>)
+                    ) : (
+                        filteredResturentList.map((resturent, index) => (
+                            <ResturentCard key={index} {...resturent.data} type={resturent.cardType}></ResturentCard>
+                        ))    
+                    )
                 }
             </div>
         </div>

@@ -1,15 +1,1 @@
-export const RESTURENTS_LIST = [
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-];
+export const RESTURENTS_LIST = 12;
