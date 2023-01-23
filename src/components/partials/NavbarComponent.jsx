@@ -1,9 +1,13 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
+
 export const NavbarComponent = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     return (
         <div className="flex flex-rows gap-4 items-center">
-            <a href="#" className="text-green-500 hover:text-green-800">Home</a>
+            <Link to="/" className="text-green-500 hover:text-green-800">Home</Link>
+            <Link to="about" className="text-green-500 hover:text-green-800">About</Link>
+            <Link to="contact" className="text-green-500 hover:text-green-800">Contact</Link>
             <a href="#" className="text-green-500 hover:text-green-800">Resturents</a>
             <a href="#" className="text-green-500 hover:text-green-800">Dishes</a>
             <a href="#" className="text-green-500 hover:text-green-800">FAQ</a>
