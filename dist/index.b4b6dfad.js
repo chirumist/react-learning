@@ -2979,69 +2979,72 @@ const AppLayout = ()=>{
     }, undefined);
 };
 _c = AppLayout;
+const basePath = {
+    basename: ""
+};
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/index.jsx",
-            lineNumber: 30,
-            columnNumber: 14
+            lineNumber: 34,
+            columnNumber: 16
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorPageDefault.default), {}, void 0, false, {
             fileName: "src/index.jsx",
-            lineNumber: 31,
-            columnNumber: 19
+            lineNumber: 35,
+            columnNumber: 21
         }, undefined),
         children: [
             {
-                path: "",
+                path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 35,
-                    columnNumber: 18
+                    lineNumber: 39,
+                    columnNumber: 20
                 }, undefined)
             },
             {
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 39,
-                    columnNumber: 18
+                    lineNumber: 43,
+                    columnNumber: 20
                 }, undefined)
             },
             {
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 43,
-                    columnNumber: 18
+                    lineNumber: 47,
+                    columnNumber: 20
                 }, undefined)
             },
             {
                 path: "/resturent/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 47,
-                    columnNumber: 18
+                    lineNumber: 51,
+                    columnNumber: 20
                 }, undefined)
             },
             {
                 path: "/login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 51,
-                    columnNumber: 18
+                    lineNumber: 55,
+                    columnNumber: 20
                 }, undefined)
             }
         ]
     }
-]);
+], basePath);
 const root = (0, _clientDefault.default).createRoot(document.querySelector("#app"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: appRouter
 }, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 59,
+    lineNumber: 65,
     columnNumber: 13
 }, undefined));
 var _c;

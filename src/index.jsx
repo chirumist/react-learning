@@ -24,35 +24,41 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "",
-        element: <HomePage />,
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-      {
-        path: "/contact",
-        element: <ContactPage />,
-      },
-      {
-        path: "/resturent/:resId",
-        element: <ResturentPage />,
-      },
-      {
-        path: "/login",
-        element: <LoginPage />,
-      }
-    ],
-  },
-]);
+const basePath = {
+  basename: process.env.NODE_ENV == "production" ? "/react-learning/dist/" : "",
+};
+const appRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/about",
+          element: <AboutPage />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
+        },
+        {
+          path: "/resturent/:resId",
+          element: <ResturentPage />,
+        },
+        {
+          path: "/login",
+          element: <LoginPage />,
+        },
+      ],
+    },
+  ],
+  basePath
+);
 
 const root = ReactDOM.createRoot(document.querySelector("#app"));
 
