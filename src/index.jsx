@@ -8,7 +8,9 @@ import { FooterComponent } from "./components/partials/FooterComponent";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import ResturentPage from "./pages/ResturentPage";
 import ErrorPage from "./pages/ErrorPage";
+import LoginPage from "./pages/Auth/LoginPage";
 
 const AppLayout = () => {
   return (
@@ -40,6 +42,14 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />,
       },
+      {
+        path: "/resturent/:resId",
+        element: <ResturentPage />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
+      }
     ],
   },
 ]);
