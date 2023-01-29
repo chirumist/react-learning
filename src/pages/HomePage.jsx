@@ -2,17 +2,14 @@ import { useState, useEffect } from "react";
 import { ResturentCard } from "../components/cards/ResturentCard";
 import { ShimmerCard } from "../components/cards/ShimmerCard";
 import { RESTURENTS_LIST } from "../constant";
-
-const filterData = ({ searchText, searchKey }, ArrayList) => {
-  return ArrayList.filter((item) =>
-    item.data[searchKey].toLowerCase().includes(searchText.toLowerCase())
-  );
-};
+import { filterData } from "../utils/helper";
+import { useResturentList } from "../hooks/useResturents";
 
 const HomePage = () => {
   const [searchText, setSearchText] = useState("");
 
-  const [allResturentList, setAllResturentList] = useState([]);
+  const allResturentList = useResturentList();
+
   const [filteredResturentList, setFilteredResturentList] = useState([]);
 
   const performSearch = (e) => {
@@ -21,22 +18,9 @@ const HomePage = () => {
     );
   };
 
-  const getResturents = async () => {
-    const res = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.241949&lng=72.86806&page_type=DESKTOP_WEB_LISTING"
-    );
-    const json = await res.json();
-    const resturents = json?.data?.cards?.find(
-      (item) => item.cardType == "seeAllRestaurants"
-    )?.data?.data?.cards;
-    setAllResturentList(resturents);
-    setFilteredResturentList(resturents);
-    return json;
-  };
-
   useEffect(() => {
-    getResturents();
-  }, []);
+    setFilteredResturentList(allResturentList);
+  }, [allResturentList]);
 
   return (
     <>

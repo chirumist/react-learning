@@ -1,23 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { IMG_CDN_URL } from "../constant";
+import { useResturentMenu } from "../hooks/useResturents";
 
 function ResturentPage() {
   const { resId } = useParams();
-  const [resturentMenu, setRestorentMenu] = useState(null);
-  const getMenu = async (menuId) => {
-    const data = await fetch(
-      `https://www.swiggy.com/dapi/menu/v4/full?menuId=${menuId}`
-    );
-    const json = await data.json();
-    console.log(json.data);
-    setRestorentMenu(json.data);
-    return json;
-  };
 
-  useEffect(() => {
-    getMenu(resId);
-  }, [resId]);
+  const resturentMenu = useResturentMenu(resId);
 
   return (
     <div>
@@ -47,7 +36,7 @@ function ResturentPage() {
           </ul>
         </div>
       ) : (
-        <h1 className="text-4xl">-----------------</h1>
+        <h1 className="text-4xl">Menu Loading</h1>
       )}
     </div>
   );
