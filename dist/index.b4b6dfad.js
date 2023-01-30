@@ -2947,6 +2947,8 @@ var _errorPage = require("./pages/ErrorPage");
 var _errorPageDefault = parcelHelpers.interopDefault(_errorPage);
 var _loginPage = require("./pages/Auth/LoginPage");
 var _loginPageDefault = parcelHelpers.interopDefault(_loginPage);
+var _faqPage = require("./pages/FaqPage");
+var _faqPageDefault = parcelHelpers.interopDefault(_faqPage);
 var _useOnline = require("./hooks/useOnline");
 var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
 var _s = $RefreshSig$();
@@ -2981,47 +2983,47 @@ const AppLayout = ()=>{
                     children: "Please Check Your Internet Connection!!"
                 }, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 45,
+                    lineNumber: 46,
                     columnNumber: 11
                 }, undefined) : viewOnline ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "bg-green-500 text-white text-center",
                     children: "You are now online"
                 }, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 11
                 }, undefined) : "",
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerComponent.HeaderComponent), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "container mx-auto py-4 mb-4",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/index.jsx",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 56,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerComponent.FooterComponent), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/index.jsx",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/index.jsx",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 };
@@ -3039,12 +3041,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/index.jsx",
-            lineNumber: 72,
+            lineNumber: 73,
             columnNumber: 16
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorPageDefault.default), {}, void 0, false, {
             fileName: "src/index.jsx",
-            lineNumber: 73,
+            lineNumber: 74,
             columnNumber: 21
         }, undefined),
         children: [
@@ -3052,7 +3054,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 77,
+                    lineNumber: 78,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3060,7 +3062,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 81,
+                    lineNumber: 82,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3068,7 +3070,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3076,7 +3078,15 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "resturent/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 89,
+                    lineNumber: 90,
+                    columnNumber: 20
+                }, undefined)
+            },
+            {
+                path: "faq",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqPageDefault.default), {}, void 0, false, {
+                    fileName: "src/index.jsx",
+                    lineNumber: 94,
                     columnNumber: 20
                 }, undefined)
             },
@@ -3084,7 +3094,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
                     fileName: "src/index.jsx",
-                    lineNumber: 93,
+                    lineNumber: 98,
                     columnNumber: 20
                 }, undefined)
             }
@@ -3096,7 +3106,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 103,
+    lineNumber: 108,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3107,7 +3117,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/partials/HeaderComponent":"lH4Fy","./components/partials/FooterComponent":"gik08","./pages/AboutPage":"6Tdqv","./pages/ContactPage":"iKleX","./pages/ErrorPage":"dXs2T","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/HomePage":"9Nmxq","./pages/ResturentPage":"jHvSV","./pages/Auth/LoginPage":"ancSv","./context/AuthContext":"1LJGW","./hooks/useOnline":"tc2Nu"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/partials/HeaderComponent":"lH4Fy","./components/partials/FooterComponent":"gik08","./pages/AboutPage":"6Tdqv","./pages/ContactPage":"iKleX","./pages/ErrorPage":"dXs2T","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/HomePage":"9Nmxq","./pages/ResturentPage":"jHvSV","./pages/Auth/LoginPage":"ancSv","./context/AuthContext":"1LJGW","./hooks/useOnline":"tc2Nu","./pages/FaqPage":"c5mac"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("4e2c8a3b230180be");
 
@@ -32586,10 +32596,10 @@ const NavbarComponent = ()=>{
                 lineNumber: 16,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "faq",
                 className: "text-green-500 hover:text-green-800",
-                children: "Resturents"
+                children: "FAQ"
             }, void 0, false, {
                 fileName: "src/components/partials/NavbarComponent.jsx",
                 lineNumber: 19,
@@ -32598,28 +32608,10 @@ const NavbarComponent = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#",
                 className: "text-green-500 hover:text-green-800",
-                children: "Dishes"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
-                children: "FAQ"
-            }, void 0, false, {
-                fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "text-green-500 hover:text-green-800",
                 children: "Hep"
             }, void 0, false, {
                 fileName: "src/components/partials/NavbarComponent.jsx",
-                lineNumber: 28,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             !isAuthenticated ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -32630,7 +32622,7 @@ const NavbarComponent = ()=>{
                         children: "Login"
                     }, void 0, false, {
                         fileName: "src/components/partials/NavbarComponent.jsx",
-                        lineNumber: 33,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32639,7 +32631,7 @@ const NavbarComponent = ()=>{
                         children: "Register"
                     }, void 0, false, {
                         fileName: "src/components/partials/NavbarComponent.jsx",
-                        lineNumber: 39,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -32663,18 +32655,18 @@ const NavbarComponent = ()=>{
                                     d: "M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
                                 }, void 0, false, {
                                     fileName: "src/components/partials/NavbarComponent.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 55,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/partials/NavbarComponent.jsx",
-                                lineNumber: 53,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/partials/NavbarComponent.jsx",
-                        lineNumber: 48,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32687,7 +32679,7 @@ const NavbarComponent = ()=>{
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/partials/NavbarComponent.jsx",
-                        lineNumber: 68,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -32822,22 +32814,88 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function ContactPage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        className: "text-4xl",
-        children: "Contact Page"
-    }, void 0, false, {
-        fileName: "src/pages/ContactPage.jsx",
-        lineNumber: 4,
-        columnNumber: 10
-    }, this);
+var _formClass = require("../components/classy/FormClass");
+var _formClassDefault = parcelHelpers.interopDefault(_formClass);
+class ContactPage extends (0, _react.Component) {
+    constructor(props){
+        super(props);
+        console.log("Contact Constructor");
+    }
+    componentDidMount() {
+        console.log("Contact component mount");
+    }
+    componentDidUpdate() {
+        console.log("Contact component update");
+    }
+    componentWillUnmount() {
+        console.log("Contact component unmount");
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-2xl",
+                    children: "ContactPage"
+                }, void 0, false, {
+                    fileName: "src/pages/ContactPage.jsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formClassDefault.default), {}, void 0, false, {
+                    fileName: "src/pages/ContactPage.jsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true);
+    }
 }
-_c = ContactPage;
 exports.default = ContactPage;
-var _c;
-$RefreshReg$(_c, "ContactPage");
 
   $parcel$ReactRefreshHelpers$2f74.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../components/classy/FormClass":"dTVJi"}],"dTVJi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9c91 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9c91.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class FormClass extends (0, _react.Component) {
+    constructor(props){
+        super(props);
+        console.log("Form Class Constructor");
+    }
+    componentDidMount() {
+        console.log("Form Class component mount");
+    }
+    componentDidUpdate() {
+        console.log("Form Class component update");
+    }
+    componentWillUnmount() {
+        console.log("Form Class component unmount");
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: "Form"
+        }, void 0, false, {
+            fileName: "src/components/classy/FormClass.jsx",
+            lineNumber: 18,
+            columnNumber: 12
+        }, this);
+    }
+}
+exports.default = FormClass;
+
+  $parcel$ReactRefreshHelpers$9c91.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -33445,6 +33503,8 @@ var _formik = require("formik");
 var _constant = require("../../constant");
 var _authContext = require("../../context/AuthContext");
 var _authContextDefault = parcelHelpers.interopDefault(_authContext);
+var _authLayout = require("../../layouts/AuthLayout");
+var _authLayoutDefault = parcelHelpers.interopDefault(_authLayout);
 var _s = $RefreshSig$();
 function LoginPage() {
     _s();
@@ -33473,160 +33533,166 @@ function LoginPage() {
     (0, _react.useEffect)(()=>{
         if (isAuthenticated) navigate("/");
     });
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-2/5 mx-auto",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: "text-center flex gap-4 mb-3",
-                children: (0, _constant.USERS).map((user, index)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "bg-green-600 text-white px-6 py-3 rounded",
-                                onClick: ()=>{
-                                    setInitialValue({
-                                        email: user.email,
-                                        password: user.password
-                                    });
-                                },
-                                children: [
-                                    "Login As ",
-                                    user.name
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Auth/LoginPage.jsx",
-                                lineNumber: 50,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, index, true, {
-                        fileName: "src/pages/Auth/LoginPage.jsx",
-                        lineNumber: 48,
-                        columnNumber: 13
-                    }, this);
-                })
-            }, void 0, false, {
-                fileName: "src/pages/Auth/LoginPage.jsx",
-                lineNumber: 45,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formik.Formik), {
-                initialValues: initialValue,
-                enableReinitialize: true,
-                validate: (values)=>{
-                    const errors = {};
-                    if (!values.email) errors.email = "E-mail Must Required";
-                    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) errors.email = "Invalid email address";
-                    if (!values.password) errors.password = "Password Must Required";
-                    return errors;
-                },
-                onSubmit: (values, { setSubmitting  })=>formSubmit(values, setSubmitting),
-                children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                        onSubmit: handleSubmit,
-                        className: "flex flex-col gap-4",
-                        children: [
-                            serverError,
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex flex-col",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                        htmlFor: "",
-                                        children: "E-mail"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 99,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        type: "email",
-                                        name: "email",
-                                        className: `${errors.email || touched.email ? "border-red-700" : ""} rounded`,
-                                        onChange: handleChange,
-                                        onBlur: handleBlur,
-                                        value: values.email
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 100,
-                                        columnNumber: 15
-                                    }, this),
-                                    errors.email ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "text-red-600",
-                                        children: errors.email && touched.email && errors.email
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 111,
-                                        columnNumber: 17
-                                    }, this) : ""
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Auth/LoginPage.jsx",
-                                lineNumber: 98,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex flex-col",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                        htmlFor: "",
-                                        children: "Password"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 119,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        type: "password",
-                                        name: "password",
-                                        autoComplete: "current-password",
-                                        className: `${errors.password || touched.password ? "border-red-700" : ""} rounded`,
-                                        onChange: handleChange,
-                                        onBlur: handleBlur,
-                                        value: values.password
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 120,
-                                        columnNumber: 15
-                                    }, this),
-                                    errors.password ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "text-red-600",
-                                        children: errors.password && touched.password && errors.password
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Auth/LoginPage.jsx",
-                                        lineNumber: 132,
-                                        columnNumber: 17
-                                    }, this) : ""
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Auth/LoginPage.jsx",
-                                lineNumber: 118,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                type: "submit",
-                                className: "bg-orange-500 px-6 py-2 rounded text-white w-full",
-                                disabled: isSubmitting,
-                                children: "Submit"
-                            }, void 0, false, {
-                                fileName: "src/pages/Auth/LoginPage.jsx",
-                                lineNumber: 139,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/Auth/LoginPage.jsx",
-                        lineNumber: 96,
-                        columnNumber: 11
-                    }, this)
-            }, void 0, false, {
-                fileName: "src/pages/Auth/LoginPage.jsx",
-                lineNumber: 65,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _authLayoutDefault.default), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-2/5 mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "text-center flex gap-4 mb-3",
+                    children: (0, _constant.USERS).map((user, index)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "bg-green-600 text-white px-6 py-3 rounded",
+                                    onClick: ()=>{
+                                        setInitialValue({
+                                            email: user.email,
+                                            password: user.password
+                                        });
+                                    },
+                                    children: [
+                                        "Login As ",
+                                        user.name
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/Auth/LoginPage.jsx",
+                                    lineNumber: 52,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, index, true, {
+                            fileName: "src/pages/Auth/LoginPage.jsx",
+                            lineNumber: 50,
+                            columnNumber: 15
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "src/pages/Auth/LoginPage.jsx",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formik.Formik), {
+                    initialValues: initialValue,
+                    enableReinitialize: true,
+                    validate: (values)=>{
+                        const errors = {};
+                        if (!values.email) errors.email = "E-mail Must Required";
+                        else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) errors.email = "Invalid email address";
+                        if (!values.password) errors.password = "Password Must Required";
+                        return errors;
+                    },
+                    onSubmit: (values, { setSubmitting  })=>formSubmit(values, setSubmitting),
+                    children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                            onSubmit: handleSubmit,
+                            className: "flex flex-col gap-4",
+                            children: [
+                                serverError,
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-col",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            htmlFor: "",
+                                            children: "E-mail"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 101,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "email",
+                                            name: "email",
+                                            className: `${errors.email || touched.email ? "border-red-700" : ""} rounded`,
+                                            onChange: handleChange,
+                                            onBlur: handleBlur,
+                                            value: values.email
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, this),
+                                        errors.email ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-red-600",
+                                            children: errors.email && touched.email && errors.email
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 113,
+                                            columnNumber: 19
+                                        }, this) : ""
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/Auth/LoginPage.jsx",
+                                    lineNumber: 100,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-col",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            htmlFor: "",
+                                            children: "Password"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 121,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "password",
+                                            name: "password",
+                                            autoComplete: "current-password",
+                                            className: `${errors.password || touched.password ? "border-red-700" : ""} rounded`,
+                                            onChange: handleChange,
+                                            onBlur: handleBlur,
+                                            value: values.password
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this),
+                                        errors.password ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-red-600",
+                                            children: errors.password && touched.password && errors.password
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Auth/LoginPage.jsx",
+                                            lineNumber: 134,
+                                            columnNumber: 19
+                                        }, this) : ""
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/Auth/LoginPage.jsx",
+                                    lineNumber: 120,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    type: "submit",
+                                    className: "bg-orange-500 px-6 py-2 rounded text-white w-full",
+                                    disabled: isSubmitting,
+                                    children: "Submit"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Auth/LoginPage.jsx",
+                                    lineNumber: 141,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Auth/LoginPage.jsx",
+                            lineNumber: 98,
+                            columnNumber: 13
+                        }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/Auth/LoginPage.jsx",
+                    lineNumber: 67,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/Auth/LoginPage.jsx",
+            lineNumber: 46,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "src/pages/Auth/LoginPage.jsx",
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
@@ -33645,7 +33711,7 @@ $RefreshReg$(_c, "LoginPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","formik":"aefoQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../context/AuthContext":"1LJGW","react-router-dom":"9xmpe","../../constant":"jVIFP"}],"aefoQ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","formik":"aefoQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../context/AuthContext":"1LJGW","react-router-dom":"9xmpe","../../constant":"jVIFP","../../layouts/AuthLayout":"fTLZC"}],"aefoQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ErrorMessage", ()=>ErrorMessage);
@@ -38518,7 +38584,39 @@ var _baseCloneJsDefault = parcelHelpers.interopDefault(_baseCloneJs);
 }
 exports.default = cloneDeep;
 
-},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"tc2Nu":[function(require,module,exports) {
+},{"./_baseClone.js":"dBps5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fTLZC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a0e1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a0e1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function AuthLayout({ children  }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "h-screen flex items-center justify-center",
+        children: children
+    }, void 0, false, {
+        fileName: "src/layouts/AuthLayout.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = AuthLayout;
+exports.default = AuthLayout;
+var _c;
+$RefreshReg$(_c, "AuthLayout");
+
+  $parcel$ReactRefreshHelpers$a0e1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"tc2Nu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7717 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38550,6 +38648,168 @@ exports.default = _s(()=>{
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","7a1Sg","d8Dch"], "d8Dch", "parcelRequirefdde")
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c5mac":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0a02 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0a02.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _accoardion = require("../components/feature/Accoardion");
+var _accoardionDefault = parcelHelpers.interopDefault(_accoardion);
+var _s = $RefreshSig$();
+const FaqPage = ()=>{
+    _s();
+    const [activeMenu, setActiveMenu] = (0, _react.useState)("");
+    const [faqList, setFaqList] = (0, _react.useState)([
+        {
+            title: "How to find villa?",
+            detail: ""
+        },
+        {
+            title: "Is it good food or not?",
+            detail: ""
+        },
+        {
+            title: "Can i sold my food as well?",
+            detail: ""
+        },
+        {
+            title: "How to reach us?",
+            detail: ""
+        }
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-2xl",
+                children: "FAQ Page"
+            }, void 0, false, {
+                fileName: "src/pages/FaqPage.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col gap-3 my-4",
+                children: faqList.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accoardionDefault.default), {
+                        isVisible: activeMenu == item.title,
+                        onClick: (title)=>setActiveMenu(title),
+                        title: item.title,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Deserunt consectetur qui laboris pariatur deserunt est consectetur veniam incididunt quis amet non quis adipisicing. Eiusmod cupidatat minim pariatur in qui amet ex do enim enim non veniam anim ex. Non id quis do dolore laborum cupidatat non eiusmod do id ex anim pariatur."
+                        }, void 0, false, {
+                            fileName: "src/pages/FaqPage.jsx",
+                            lineNumber: 23,
+                            columnNumber: 15
+                        }, undefined)
+                    }, item.title, false, {
+                        fileName: "src/pages/FaqPage.jsx",
+                        lineNumber: 17,
+                        columnNumber: 13
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/pages/FaqPage.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(FaqPage, "oG1/9Vta14ybBUiCtqyayC6r6dc=");
+_c = FaqPage;
+exports.default = FaqPage;
+var _c;
+$RefreshReg$(_c, "FaqPage");
+
+  $parcel$ReactRefreshHelpers$0a02.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../components/feature/Accoardion":"1hIAF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1hIAF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$476e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$476e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CollapsibleAccoardion", ()=>CollapsibleAccoardion);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const CollapsibleAccoardion = ({ children , title , isVisible =false , onClick  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "border rounded",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-between px-4 py-2 bg-gray-100",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-xl",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/components/feature/Accoardion.jsx",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    !isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: ()=>onClick(title),
+                        children: "+"
+                    }, void 0, false, {
+                        fileName: "src/components/feature/Accoardion.jsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: ()=>onClick(""),
+                        children: "-"
+                    }, void 0, false, {
+                        fileName: "src/components/feature/Accoardion.jsx",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/feature/Accoardion.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-4",
+                children: [
+                    " ",
+                    children
+                ]
+            }, void 0, true, {
+                fileName: "src/components/feature/Accoardion.jsx",
+                lineNumber: 19,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/feature/Accoardion.jsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, undefined);
+};
+_c = CollapsibleAccoardion;
+exports.default = CollapsibleAccoardion;
+var _c;
+$RefreshReg$(_c, "CollapsibleAccoardion");
+
+  $parcel$ReactRefreshHelpers$476e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}]},["1xC6H","7a1Sg","d8Dch"], "d8Dch", "parcelRequirefdde")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

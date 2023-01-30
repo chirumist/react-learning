@@ -13,6 +13,7 @@ import ContactPage from "./pages/ContactPage";
 import ResturentPage from "./pages/ResturentPage";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/Auth/LoginPage";
+import FaqPage from "./pages/FaqPage";
 
 import useOnline from "./hooks/useOnline";
 
@@ -87,6 +88,10 @@ const appRouter = createBrowserRouter(
         {
           path: "resturent/:resId",
           element: <ResturentPage />,
+        },
+        {
+          path: "faq",
+          element: <FaqPage />,
         },
         {
           path: "login",

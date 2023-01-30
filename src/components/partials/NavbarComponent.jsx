@@ -16,15 +16,9 @@ export const NavbarComponent = () => {
       <Link to="contact" className="text-green-500 hover:text-green-800">
         Contact
       </Link>
-      <a href="#" className="text-green-500 hover:text-green-800">
-        Resturents
-      </a>
-      <a href="#" className="text-green-500 hover:text-green-800">
-        Dishes
-      </a>
-      <a href="#" className="text-green-500 hover:text-green-800">
+      <Link to="faq" className="text-green-500 hover:text-green-800">
         FAQ
-      </a>
+      </Link>
       <a href="#" className="text-green-500 hover:text-green-800">
         Hep
       </a>
